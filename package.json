@@ -33,5 +33,7 @@
     "sass": "^1.32.5",
     "sharp": "^0.27.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2"
+  }
 }
