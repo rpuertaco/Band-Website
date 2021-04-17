@@ -1,21 +1,498 @@
+#rights{
+  position:absolute;
+  left: 40px;
+  bottom: 0;
+  font-size: 10px;
+}
+
+a{
+  text-decoration: none;
+}
+a:hover{
+  color:red;
+}
+
+li{
+list-style: none;
+}
+
+html{
+overflow-x:hidden ;
+}
+
 body {
+  padding: 0;
   margin: 0;
-  padding: 30px;
   font-family: $font-family-sans-serif;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+
 }
 
-.uoc-logo {
-  display: block;
-  margin-bottom: 20px;
-  width: 300px;
-  height: auto;
+.myContainer{
+  padding: 4%;
+}
+.centered{
+  text-align:center;
 }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 36px;
+.unlocked:hover{
+  color:red;
+  cursor: pointer;
+}
+.dropdown::after{
+  content: " \22C1";
+  font-weight:900;
+}
+.dropup::after{
+  content: " \22C0";
+  font-weight:900;
+}
+.locked{
+  display:none
+}
+
+// header
+
+header nav{
+  margin:auto;
+  padding:0;
+  text-align: center;
+  width: 100vw;
+}
+
+header ul{
+  margin:0;
+  padding: 0;
+}
+
+header li{
+
+  display:flex;
+}
+header ul li a{
+  font-weight: 600;
+  color: black;
+  padding:15px;
+  width: 100%;
+
+}
+
+// logo
+
+.myLogo{
+  font-family:$font-logo;
+  font-size: 30px;
+  font-weight: 900;
+  color:black;
+  text-decoration: none;
+  line-height: 0.8;
+  text-align: center;
+  position:relative;
+  top:20px;
+  text-shadow: 2px 2px $shadow;
+  p:nth-child(2){
+    color:red;
+ }
+}
+
+
+
+header ul li a:hover{
+  color:red;
+}
+
+
+// footer
+
+footer{
+  display:inline-flex;
+  position:relative;
+  width: 100%;
+  padding:10px;
+  padding-bottom: 30px;
+  text-align: center;
+
+  nav{
+    border-top: 1px solid gray;
+    margin:auto;
+    display:inline-flex;
+    width: 90%;
+  justify-content: space-between;
+
+  }
+  ul{
+    line-height: 20px;
+    padding-right: 25px ;
+  }
+  
+li{
+  font-weight: 900;
+  a{
+    color:black;
+  }
+  a:hover{
+    color:red;
+  }
+}
+
+div{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  i{
+    color:black;
+  }
+  i:hover{
+    color:red;
+  }
+}
+
+}
+figcaption{
+  margin-top: 5px;
   font-weight: 700;
-  color: $uoc-corporate;
+}
+
+
+// band section
+
+.bandMember{
+  padding:5px;
+  figure{
+      img{
+        max-width: 100%;
+        max-height: 250px;
+      }
+
+  }
+  p{
+    text-align: justify;
+    margin-left: 20px;
+  }
+}
+
+
+// Blog
+
+#carouselExampleControls{
+  position: relative;
+text-align: center;
+  img{
+    height:200px;
+
+  }
+  .center{
+    color:white;
+    position: absolute;
+    top:40%;
+    left:50%;
+    margin-left:-100px;
+    background-color: $shadow;
+  }
+}
+
+
+
+// Home Grid
+
+
+
+.grid{
+  height:600px;
+  position:relative;
+  background-color: black;
+  a{
+    background-color:$main;
+    font-family:$font-logo;
+    color:black;
+    height: 100%;
+    font-weight: 900;
+    width: 100%;
+    position:absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.main-grid{
+  height:450px;
+  background:url("../images/main-md.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+
+
+}
+.groupDiv{
+  background-color: $main;
+  height:100px;
+  padding-top:0;
+  margin-top:-100px;
+  position:relative;
+  p:nth-child(1){
+    padding-top: 10px;
+  }
+}
+.grid2{
+  
+  background:url("../images/band-sm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position:absolute;
+  left:0;
+  bottom:0;
+  height: 150px;
+  width: 33.33333%;
+}
+.grid3{
+  
+  background:url("../images/blog-sm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position:absolute;
+  left:33.33333%;
+  bottom:0;
+  height: 150px;
+  width: 33.3333%;
+
+}
+.grid4{
+  background:url("../images/content-sm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position:absolute;
+  left:66.6666%;
+  bottom:0;
+  height: 150px;
+  width: 33.333333333%;
+}
+.grid2:hover{
+  
+  a{
+    color:red;
+  }
+}
+.grid3:hover{
+
+  a{
+    color:red;
+  }
+}
+.grid4:hover{
+
+  a{
+    color:red;
+  }
+}
+
+
+@supports(display:grid){
+  .grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr) ;
+    height:60vh;
+  }
+  .main-grid{
+    height: auto;
+    grid-column: 1/4;
+    grid-row: 1/4;
+  }
+
+  .groupDiv{
+    height: 20;
+    margin-top: 5px;
+    padding-top:5px;
+    height: 120px;
+    grid-column: 1/4;
+    grid-row:3;
+  }
+
+
+  .grid2{
+    grid-column:1;
+    grid-row: 4;
+    position:relative;
+    width: auto;
+    height: auto;
+    top:auto;
+    left:auto;
+
+  }
+  .grid3{
+    grid-column:2;
+    grid-row: 4;
+    position:relative;
+    width: auto;
+    height: auto;
+    left:auto;
+    bottom:auto;
+
+  }
+
+  .grid4{
+    grid-column:3;
+    grid-row: 4;
+    position:relative;
+    left:auto;
+    bottom:auto;
+    height: auto;
+    width: auto;
+  }
+  .grid2:hover{
+    border: 5px solid red;
+  }
+  .grid3:hover{
+    border: 5px solid red;
+  }
+  .grid4:hover{
+    border: 5px solid red;
+    }
+
+
+
+}
+
+
+
+// tablet
+@media(min-width:700px){
+
+header nav{
+  text-align: left;
+  display:inline-flex;
+
+}
+header ul{
+  position: absolute;
+  display:inline-flex;
+  justify-content: space-between;
+  right:15px;
+  width: 370px;
+}
+
+header ul li a{
+  font-size: 20px;
+}
+
+.myLogo{
+  font-size: 50px;
+  padding-left: 50px;
+}
+
+.groupDiv{
+  height:120px;
+  padding-top:10px;
+  margin-top:-120px;
+}
+
+
+
+.bandMembers{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+
+.bandMember{
+  width: 500px;
+  margin: 10px;
+  margin:auto;
+}
+// footer
+footer{
+
+  nav{
+
+    width: 95%;;
+  padding:0;
+
+  }
+  ul{
+    line-height: auto;
+    display: inline-flex;
+    justify-content: space-between;
+    width:25%;
+    padding-top: 50px;
+  }
+  
+li{
+  font-weight: 900;
+}
+
+div{
+  display:inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100px;;
+  i{
+    padding-top: 65px;
+  }
+}
+
+}
+
+.groupDiv{
+  height:auto;
+  padding-top:auto;
+  margin-top:auto;
+  position:relative;
+  top:-115px;
+}
+
+@supports(display:grid){
+  .main-grid{
+    background:url("../images/main-md.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .groupDiv{
+    top:0;
+  }
+}
+
+// blog
+
+#carouselExampleControls{
+
+  img{
+    height:400px;
+  }
+}
+
+
+
+}
+
+// PC
+@media(min-width:992px){
+  header ul li a{
+    font-size: 25px;
+  }
+  header ul{
+  width: 600px;
+
+  }
+
+  #carouselExampleControls{
+
+    img{
+      height:600px;
+    }
+  }
+
+  @supports(display:grid){
+    .main-grid{
+      background:url("../images/main-lg.jpg");
+      background-repeat:no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
 }
