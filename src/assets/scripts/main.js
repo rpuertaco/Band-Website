@@ -32,7 +32,7 @@ function buildFooter() {
   const navFooter = document.createElement("nav");
   const logoA = document.createElement("a");
   logoA.href = "./index.html";
-  logoA.classList = "myLogo";
+  logoA.classList = "my-logo";
   const logo1 = document.createElement("p");
   const logo2 = document.createElement("p");
   logo1.textContent = "MADE OF";
@@ -84,7 +84,7 @@ function buildHeader() {
   const navHeader = document.createElement("nav");
   const logoA = document.createElement("a");
   logoA.href = "./index.html";
-  logoA.classList = "myLogo";
+  logoA.classList = "my-logo";
   const logo1 = document.createElement("p");
   const logo2 = document.createElement("p");
   logo1.textContent = "MADE OF";
