@@ -17,25 +17,30 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img srcset="./assets/images/tb1-sm.jpg 320w,
-                    ./assets/images/tb1-md.jpg 480w,
-                    ./assets/images/tb1-lg.jpg 800w" sizes="(max-width: 320px) 280px,
-                   (max-width: 480px) 440px,
-                   800px" src="./assets/images/tb1-md.jpg" class="d-block w-100" alt="...">
+                    <picture>
+                        <source media="(min-width:992px)" srcset="./assets/images/tb1-lg.jpg" class="d-block w-100">
+                        <source media="(min-width:700px)" srcset="./assets/images/tb1-md.jpg" class="d-block w-100">
+                        <source media="(min-width:0px)" srcset="./assets/images/tb1-sm.jpg" class="d-block w-100">
+                        <img src="./assets/images/tb2-md.jpg" alt="Singer sing new song" class="d-block w-100">
+                    </picture>
                 </div>
                 <div class="carousel-item">
-                    <img srcset="./assets/images/tb2-sm.jpg 320w,
-                    ./assets/images/tb2-md.jpg 480w,
-                    ./assets/images/tb2-lg.jpg 800w" sizes="(max-width: 320px) 280px,
-                   (max-width: 480px) 440px,
-                   800px" src="./assets/images/tb2-md.jpg" class="d-block w-100" alt="...">
+                    <picture>
+                        <source media="(min-width:992px)" srcset="./assets/images/tb2-lg.jpg" class="d-block w-100">
+                        <source media="(min-width:700px)" srcset="./assets/images/tb2-md.jpg" class="d-block w-100">
+                        <source media="(min-width:0px)" srcset="./assets/images/tb2-sm.jpg" class="d-block w-100">
+                        <img src="./assets/images/tb2-md.jpg" alt="Guitarrist Playing Electric Guitar"
+                            class="d-block w-100">
+                    </picture>
                 </div>
                 <div class="carousel-item">
-                    <img srcset="./assets/images/tb3-sm.jpg 320w,
-                    ./assets/images/tb3-md.jpg 480w,
-                    ./assets/images/tb3-lg.jpg 800w" sizes="(max-width: 320px) 280px,
-                   (max-width: 480px) 440px,
-                   800px" src="./assets/images/tb3-md.jpg" class="d-block w-100" alt="...">
+                    <picture>
+                        <source media="(min-width:992px)" srcset="./assets/images/tb3-lg.jpg" class="d-block w-100">
+                        <source media="(min-width:700px)" srcset="./assets/images/tb3-md.jpg" class="d-block w-100">
+                        <source media="(min-width:0px)" srcset="./assets/images/tb3-sm.jpg" class="d-block w-100">
+                        <img src="./assets/images/tb3-md.jpg" alt="Guitarrist playing acoustic guitar"
+                            class="d-block w-100">
+                    </picture>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -54,6 +59,139 @@
             </div>
 
         </div>
+
+
+        <section class="article container">
+            <h2>Far far away, behind the word mountains, far from
+                the countries Vokalia and Consonantia, there live
+                the blind texts. <span class="badge">New</span></h2>
+
+            <p class="container">Far far away, behind the word mountains, far from the countries Vokalia and
+                Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right
+                at the coast of the Semantics, a large language ocean. Far far away, behind the
+                word mountains. Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.</p>
+
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Item 1
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Far far away, behind the word mountains, far from the countries
+                            Vokalia and
+                            Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at
+                            the coast of the Semantics.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Item 2
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Far far away, behind the word mountains, far from the countries
+                            Vokalia and
+                            Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at
+                            the coast of the Semantics, a large language ocean.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Item 3
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Far far away, behind the word mountains, far from the countries
+                            Vokalia and
+                            Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at
+                            the coast of the Semantics, a large language ocean.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote">
+                <blockquote>Far far away,
+                    behind the word
+                    mountains, far
+                    from the countries
+                    Vokalia and
+                    Consonantia</blockquote>
+                <p>
+                    Far far away, behind the word mountains, far from
+                    the countries Vokalia and Consonantia, there live
+
+                    the blind texts. Separated they live in Bookmark-
+                    sgrove right at the coast of the Semantics, a large
+
+                    language ocean. Far far away, behind the word
+                    mountains, far from the countries Vokalia and
+                    Consonantia, there live the blind texts. Separated
+                    they live in Bookmarksgrove
+                </p>
+            </div>
+            <picture>
+                <source media="(min-width:992px)" srcset="./assets/images/main-lg.jpg">
+                <source media="(min-width:700px)" srcset="./assets/images/main-md.jpg">
+                <source media="(min-width:0px)" srcset="./assets/images/main-sm.jpg">
+                <img src="./assets/images/main-md.jpg" alt="band in direct concert">
+            </picture>
+
+
+            <p class="container">Far far away, behind the word mountains, far from the countries Vokalia and
+                Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
+                Semantics, a large language ocean. Far far away, behind the word mountains</p>
+
+
+            <section>
+                <h3>Next concerts:</h3>
+                <div class="extra">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/images/concert1.jpg" class="card-img-top" alt="concert hall">
+                        <div class="card-body">
+                            <h5 class="card-title">Liverpool Philarmonic hall</h5>
+                            <p class="card-text">April 31st from 20:00 to 22:00</p>
+                            <a href="#" class="btn btn-success">Buy Tickets</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/images/concert2.jpg" class="card-img-top" alt="concert hall">
+                        <div class="card-body">
+                            <h5 class="card-title">St George Hall</h5>
+                            <p class="card-text">June 31st from 19:00 to 21:00</p>
+                            <a href="#" class="btn btn-success">Buy Tickets</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/images/concert3.jpg" class="card-img-top" alt="concert hall">
+                        <div class="card-body">
+                            <h5 class="card-title">Cavern Club</h5>
+                            <p class="card-text">September 31st from 18:00 to 19:30</p>
+                            <a href="#" class="btn btn-success">Buy Tickets</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </section>
+
+
+
+        </section>
 
 
 

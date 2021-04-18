@@ -4,6 +4,9 @@
   bottom: 0;
   font-size: 10px;
 }
+h1{
+  padding-top: 50px;
+}
 
 a{
   text-decoration: none;
@@ -100,6 +103,20 @@ header ul li a:hover{
   color:red;
 }
 
+// iframes
+.flex{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+}
+iframe{
+  width: 100%;
+  height: 382px;
+   margin:auto;
+}
+
 
 // footer
 
@@ -189,8 +206,80 @@ text-align: center;
     background-color: $shadow;
   }
 }
+.article{
+  margin-top: 25px;
+  h2{
+    padding-bottom: 30px;
+  }
+  img{
+    max-width: 100%;
+    margin:auto;
+    padding-bottom: 25px;
+  }
+  
+
+}
+
+.extra{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  div{
+    margin:20px auto ;
+  }
+  .card-img-top{
+    width: 500px;
+    height: 250px;
+  }
+  .btn:hover{
+    background-color: red;
+  }
+  .card{
+    background-color: $main;
+  }
+ }
 
 
+.badge{
+  background-color: lightcoral;
+  padding:5px;
+}
+
+.accordion{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 30px;
+  .accordion-item{
+  
+    button:hover{
+      background-color: $main;
+     
+    }
+    button.accordion-button:not(.collapsed){
+      background-color:$shadow;
+      color:black;
+    }
+}
+
+
+}
+
+.quote{
+  padding: 15px;
+  display:flex;
+  flex-direction: column;
+  blockquote{
+    padding:15px;
+    font-size: 20px;
+    font-weight: 600;
+    color:gray;
+
+  }
+  p{
+    padding:15px;
+  }
+}
 
 // Home Grid
 
@@ -392,6 +481,7 @@ header ul li a{
 
 
 
+
 .bandMembers{
   display: flex;
   flex-wrap: wrap;
@@ -404,6 +494,18 @@ header ul li a{
   margin: 10px;
   margin:auto;
 }
+
+.quote{
+  flex-direction: row;
+}
+
+iframe{
+  width: 500px;
+  min-height: 382px;
+
+  margin:auto;
+}
+
 // footer
 footer{
 
@@ -480,12 +582,21 @@ div{
 
   }
 
+  .flex{
+    flex-direction: row;
+  }
+
   #carouselExampleControls{
 
     img{
       height:600px;
     }
   }
+
+    .extra{
+      flex-direction: row;
+    }
+
 
   @supports(display:grid){
     .main-grid{
